@@ -53,21 +53,22 @@ class Triangle {
     console.log(`Krastine b: ${this.b}`);
     console.log(`Krastine c: ${this.c}`);
     console.log(`Trikampio perimetras: ${this.perimeter}`)
-
+/*
     if (this.arTrikampisEgzistuoja) {
       console.log("trikampis egzistuoja!");
     } else {
       console.log("Trikampis neegzistuoja");
     }
-
+*/
     console.log(`Trikampis ${this.arTrikampisEgzistuoja ? "egzistuoja" : "neegzistuoja"}.`);
-
+/*
      if (this.arTrikampisStatus) {
       console.log("Trikampis status!");
-    } else {
+    } 
+    else {
       console.log("Trikampis nėra status");
     }
-
+*/
     console.log(`Trikampis ${this.arTrikampisStatus ? "yra" : "nera"} statusis.`);
 
     console.log(`------------------------`);
@@ -90,17 +91,32 @@ class Triangle {
   }
 }
 
+const trikampiai: Triangle[] = [];
+
+for (let i = 0; i <= 49; i++) {
+  
+  var rndA: number = Math.floor(Math.random() * 100);
+  var rndB: number = Math.floor(Math.random() * 100);
+  var rndC: number = Math.floor(Math.random() * 100);
+
+  trikampiai.push(new Triangle(rndA, rndB, rndC));
+}
+
+console.table(trikampiai);
+
+/*
+for (const trikampis of trikampiai) {
+  trikampis.spausdintiDuomenis();
+}
 
 
+/*
 const trikampis1 = new Triangle(2, 3, 4);
 const trikampis2 = new Triangle(5, 6, 7);
 
 trikampis1.spausdintiDuomenis();
 trikampis2.spausdintiDuomenis();
 
-const trikampiai: Triangle[] = [];
-trikampiai.push(new Triangle(6, 3, 8));
+*/
 
-for (const trikampis of trikampiai) {
-  trikampis.spausdintiDuomenis();
-}
+
