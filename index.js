@@ -35,3 +35,8 @@ for (let i = 0; i <= 49; i++) {
     trikampiai.push(new Triangle(rndA, rndB, rndC));
 }
 console.table(trikampiai);
+for (const trikampis of trikampiai) {
+    if (trikampis.arTrikampisEgzistuoja) {
+        trikampis.spausdintiDuomenis();
+    }
+}
