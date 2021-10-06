@@ -78,7 +78,7 @@ class Triangle {
     return this.a + this.b + this.c;
   }
 
-  private get arTrikampisEgzistuoja(): boolean {
+  public get arTrikampisEgzistuoja(): boolean {
     return this.a + this.b > this.c && 
            this.b + this.c > this.a && 
            this.c + this.a > this.b
@@ -104,9 +104,11 @@ for (let i = 0; i <= 49; i++) {
 
 console.table(trikampiai);
 
-/*
+
 for (const trikampis of trikampiai) {
-  trikampis.spausdintiDuomenis();
+  if (trikampis.arTrikampisEgzistuoja){
+    trikampis.spausdintiDuomenis();
+  }
 }
 
 
