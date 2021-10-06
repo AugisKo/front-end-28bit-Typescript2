@@ -38,17 +38,20 @@
 
 
 class Triangle {
+  
   public a: number;
   public b: number;
   public c: number;
 
   public constructor (a: number, b: number, c: number) {
+
     this.a = a;
     this.b = b;
     this.c = c;
   }
  
   public spausdintiDuomenis(): void {
+
     console.log(`Krastine a: ${this.a}`);
     console.log(`Krastine b: ${this.b}`);
     console.log(`Krastine c: ${this.c}`);
@@ -75,16 +78,19 @@ class Triangle {
   }
 
   public get perimeter(): number {
+
     return this.a + this.b + this.c;
   }
 
   public get arTrikampisEgzistuoja(): boolean {
+
     return this.a + this.b > this.c && 
            this.b + this.c > this.a && 
            this.c + this.a > this.b
   }
 
   private get arTrikampisStatus(): boolean {
+
     return this.a ** 2 + this.b ** 2 === this.c ** 2||
            this.c ** 2 + this.b ** 2 === this.a ** 2||
            this.a ** 2 + this.c ** 2 === this.b ** 2
@@ -106,10 +112,14 @@ console.table(trikampiai);
 
 
 for (const trikampis of trikampiai) {
+
   if (trikampis.arTrikampisEgzistuoja){
+  
     trikampis.spausdintiDuomenis();
+  
   }
 }
+
 
 
 /*
