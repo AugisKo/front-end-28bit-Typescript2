@@ -1,1 +1,7 @@
-
+{
+    "compileOnSave": true,
+    "include": ["./*"],
+    "compilerOptions": {
+        "removeComments": true
+    }
+}
