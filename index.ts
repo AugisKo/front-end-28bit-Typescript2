@@ -43,7 +43,7 @@ class Triangle {
     return this.a + this.b + this.c;
   }
   
-    console.log(`Trikampio perimetras: ${this.perimeter}`)
+    console.log(`Trikampio perimetras: ${this.perimeter}`);
 
 /* 7. Parašykite metodą, kuris nusako, ar toks trikampis gali
  * egzistuoti (metodas turi grąžinti boolean reikšmę).
