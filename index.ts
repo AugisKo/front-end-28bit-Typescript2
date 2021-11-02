@@ -1,18 +1,20 @@
-
+/*
 * 1. Susikurkite TypeScript projektą
 *
 * 2. Parašykite programą, kuri padeda dirbti su trikampiais
 * 3. Aprašykite klasę "Trikampis", kuri turėtu tris atributus
 * simbolizuojančius visas tris trikampio kraštines (a, b, c).
-*
+*/
+
 class Triangle {
   
   public a: number;
   public b: number;
   public c: number;
 
- * 4. Trikampio kraštinių reikšmės turi būti priskiriamos sukuriant
- * objektą (konstruktoriuje).
+/* 4. Trikampio kraštinių reikšmės turi būti priskiriamos sukuriant
+* objektą (konstruktoriuje).
+*/
   
   public constructor (a: number, b: number, c: number) {
 
@@ -21,8 +23,9 @@ class Triangle {
     this.c = c;
   }
  
- * 5. Aprašykite metodą "spausdintiDuomenis()", kuris atspausdina
- * visus trikampio duomenis (kraštines) į konsolę.
+/* 5. Aprašykite metodą "spausdintiDuomenis()", kuris atspausdina
+* visus trikampio duomenis (kraštines) į konsolę.
+*/
   
   public spausdintiDuomenis(): void {
 
@@ -30,9 +33,10 @@ class Triangle {
     console.log(`Krastine b: ${this.b}`);
     console.log(`Krastine c: ${this.c}`);
     
- * 6. Papildykite klasę metodu, kuris apskaičiuoja ir grąžina
+/* 6. Papildykite klasę metodu, kuris apskaičiuoja ir grąžina
  * trikampio perimetrą. Spausdinant trikampio duomenis
  * atspausdinkite ir jo perimetrą.
+ */
     
     public get perimeter(): number {
 
@@ -41,13 +45,13 @@ class Triangle {
   
     console.log(`Trikampio perimetras: ${this.perimeter}`)
 
-* 7. Parašykite metodą, kuris nusako, ar toks trikampis gali
-* egzistuoti (metodas turi grąžinti boolean reikšmę).
-* Spausdindami duomenis pasakykite, ar toks trikampis gali
-* egzistuoti.
+/* 7. Parašykite metodą, kuris nusako, ar toks trikampis gali
+ * egzistuoti (metodas turi grąžinti boolean reikšmę).
+ * Spausdindami duomenis pasakykite, ar toks trikampis gali
+ * egzistuoti.
 
 * I sprendimo variantas
-
+*/
 /*
     if (this.arTrikampisEgzistuoja) {
       console.log("trikampis egzistuoja!");
@@ -56,8 +60,9 @@ class Triangle {
     }
 */
 
-* II sprendimo variantas
-
+/* II sprendimo variantas
+*/
+    
   public get arTrikampisEgzistuoja(): boolean {
 
     return this.a + this.b > this.c && 
@@ -67,11 +72,11 @@ class Triangle {
 
     console.log(`Trikampis ${this.arTrikampisEgzistuoja ? "egzistuoja" : "neegzistuoja"}.`);
     
-* 8. Papildykite klasę metodu, kuris nurodo, ar trikampis yra
+/* 8. Papildykite klasę metodu, kuris nurodo, ar trikampis yra
 * statusis.
 
 * I sprendimo variantas
-
+*/
 /*
      if (this.arTrikampisStatus) {
       console.log("Trikampis status!");
@@ -81,8 +86,9 @@ class Triangle {
     }
 */
 
-* II sprndimo variantas
-
+/* II sprndimo variantas
+*/
+    
   private get arTrikampisStatus(): boolean {
 
     return this.a ** 2 + this.b ** 2 === this.c ** 2||
@@ -96,15 +102,17 @@ class Triangle {
   }
 }
 
-* 9. Sukurkite masyvą, kuris saugo trikampių reikšmes,
+/* 9. Sukurkite masyvą, kuris saugo trikampių reikšmes,
 * panaudodami ciklą atspausdinkite visų masyvę esančių trikampių
 * duomenis.
+*/
 
 const trikampiai: Triangle[] = [];
 
-* 10. ND: Papildykite programą funkcionalumu, kuris trikampių
+/* 10. ND: Papildykite programą funkcionalumu, kuris trikampių
 * masyvą užpildo trikampiais (50 reikšmių), kurių kraštinės yra
 * atsitiktinės reikšmės.
+*/
 
 for (let i = 0; i <= 49; i++) {
   
@@ -117,8 +125,9 @@ for (let i = 0; i <= 49; i++) {
 
 console.table(trikampiai);
 
-* Papildoma: Vėliau programa masyvą prafiltravus
+/* Papildoma: Vėliau programa masyvą prafiltravus
 * paliktų tik egzistuojančius trikampius ir atspausdintų jų duomenis.
+*/
 
 for (const trikampis of trikampiai) {
 
