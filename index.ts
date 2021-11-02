@@ -49,8 +49,8 @@ class Triangle {
  * egzistuoti (metodas turi grąžinti boolean reikšmę).
  * Spausdindami duomenis pasakykite, ar toks trikampis gali
  * egzistuoti.
-
-* I sprendimo variantas
+*/
+/* I sprendimo variantas
 */
 /*
     if (this.arTrikampisEgzistuoja) {
@@ -74,8 +74,8 @@ class Triangle {
     
 /* 8. Papildykite klasę metodu, kuris nurodo, ar trikampis yra
 * statusis.
-
-* I sprendimo variantas
+*/
+/* I sprendimo variantas
 */
 /*
      if (this.arTrikampisStatus) {
