@@ -1,4 +1,4 @@
-/**
+
 * 1. Susikurkite TypeScript projektą
 *
 * 2. Parašykite programą, kuri padeda dirbti su trikampiais
@@ -47,6 +47,7 @@ class Triangle {
 * egzistuoti.
 
 * I sprendimo variantas
+
 /*
     if (this.arTrikampisEgzistuoja) {
       console.log("trikampis egzistuoja!");
@@ -54,6 +55,7 @@ class Triangle {
       console.log("Trikampis neegzistuoja");
     }
 */
+
 * II sprendimo variantas
 
   public get arTrikampisEgzistuoja(): boolean {
@@ -69,6 +71,7 @@ class Triangle {
 * statusis.
 
 * I sprendimo variantas
+
 /*
      if (this.arTrikampisStatus) {
       console.log("Trikampis status!");
